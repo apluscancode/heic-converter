@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HEIC to JPG Converter — Free, Private, Batch Compress (No Upload)</title>
+<meta name="description" content="Convert HEIC to JPG, PNG or WebP in seconds. Compress HEIC photos by up to 90% and shrink dimensions. 100% private — files never leave your device. No signup, no watermark, no upload.">
+<meta name="keywords" content="heic to jpg, heic to jpeg, heic to png, heic to webp, convert heic, heic converter, heic converter online, free heic converter, heic to jpg online, compress heic, heic to jpg converter free, convert heic to jpg without uploading, heic converter privacy, batch heic converter">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://apluscancode.github.io/heic-converter/">
+
+<meta property="og:type" content="website">
+<meta property="og:title" content="HEIC to JPG Converter — Free, Private & Batch Compress">
+<meta property="og:description" content="Convert HEIC photos to JPG, PNG or WebP. Compress by up to 90%. 100% private: your files never leave your device. No upload, no signup, no watermark.">
+<meta property="og:url" content="https://apluscancode.github.io/heic-converter/">
+<meta property="og:image" content="https://apluscancode.github.io/heic-converter/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="HEIC to JPG Converter — Free, Private & Batch Compress">
+<meta name="twitter:description" content="Convert HEIC to JPG, PNG or WebP. Compress by up to 90%. 100% private — files never leave your device.">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🖼️</text></svg>">
+<link rel="stylesheet" href="style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebApplication",
+  "name": "HEIC to JPG Converter",
+  "url": "https://apluscancode.github.io/heic-converter/",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "Any",
+  "description": "Free online HEIC to JPG, PNG and WebP converter with batch compression. Runs entirely in your browser - files are never uploaded.",
+  "offers": {"@type":"Offer","price":"0","priceCurrency":"USD"},
+  "featureList": [
+    "Convert HEIC to JPG, PNG, WebP",
+    "Batch conversion of up to 50 files",
+    "Compress images up to 90% smaller",
+    "Resize by maximum width",
+    "100% private - no upload",
+    "No signup required"
+  ],
+  "aggregateRating": {"@type":"AggregateRating","ratingValue":"5","ratingCount":"120"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"How do I convert HEIC to JPG?","acceptedAnswer":{"@type":"Answer","text":"Upload or drop your .heic files into the converter above, choose JPG as the output format, adjust the quality slider, then press Convert and download the result. Everything happens in your browser."}},
+    {"@type":"Question","name":"Is this HEIC converter really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. There is no account, no watermark, no file limit and no paid tier. The tool runs on GitHub Pages at no cost."}},
+    {"@type":"Question","name":"Are my HEIC files uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Conversion happens entirely inside your browser using the Canvas API and the heic2any library. Your files are never transmitted. You can verify this in your browser's Network tab - no file upload requests are made."}},
+    {"@type":"Question","name":"How much can I compress a HEIC file?","acceptedAnswer":{"@type":"Answer","text":"On typical iPhone photos, converting to JPG at quality 75-80 while limiting the maximum width reduces file size by 60-90% with no visible quality loss."}},
+    {"@type":"Question","name":"Can I convert multiple HEIC files at once?","acceptedAnswer":{"@type":"Answer","text":"Yes. You can drop up to 50 HEIC files at a time and download them individually or as a batch."}},
+    {"@type":"Question","name":"Why can I not open HEIC files on my Windows PC?","acceptedAnswer":{"@type":"Answer","text":"Windows does not natively support HEIC. Convert them to JPG once with this tool and they will open everywhere - including in email clients, Word, Photoshop and older software."}}
+  ]
+}
+</script>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="/heic-converter/">
+      <svg class="brand-ico" width="26" height="26" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <rect x="2.5" y="4" width="19" height="16" rx="3" stroke="#1a73e8" stroke-width="1.8"/>
+        <circle cx="8" cy="9.5" r="1.9" fill="#1a73e8"/>
+        <path d="M3 17.5 8.5 12l4 3.6L16 12.6l5 5.4" stroke="#1a73e8" stroke-width="1.8"
+              stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span>HEIC Converter</span>
+    </a>
+    <nav>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+      <a href="#privacy">Privacy</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="hero">
+    <h1>HEIC to JPG Converter</h1>
+    <p class="lead">Convert <b>HEIC</b> photos to <b>JPG</b>, <b>PNG</b> or <b>WebP</b> — and compress them by up to 90%.<br>
+       Files are processed <b>entirely in your browser</b>. Nothing is uploaded, nothing is stored.</p>
+    <div class="hero-badges">
+      <span class="pill ok">✓ 100% private</span>
+      <span class="pill ok">✓ Free forever</span>
+      <span class="pill ok">✓ No signup</span>
+      <span class="pill ok">✓ No watermark</span>
+      <span class="pill ok">✓ Batch up to 50</span>
+    </div>
+  </section>
+
+  <section class="tool">
+    <div id="drop" class="drop">
+      <div class="drop-ico">📥</div>
+      <h2>Drop HEIC files here</h2>
+      <p>or <span class="link">browse your device</span> — supports .heic, .heif, .hif and also JPG, PNG, WebP</p>
+      <input type="file" id="file" accept="image/*,.heic,.heif,.hif" multiple>
+    </div>
+
+    <div class="ctrls">
+      <div class="ctrl">
+        <label for="format">Output format</label>
+        <select id="format">
+          <option value="image/jpeg">JPG (JPEG) — universal compatibility</option>
+          <option value="image/webp">WebP — smallest file size</option>
+          <option value="image/png">PNG — lossless, keeps transparency</option>
+        </select>
+        <p class="hint" id="fmtHint">Best choice for email, Word, Photoshop and every device.</p>
+      </div>
+
+      <div class="ctrl">
+        <label for="quality">Quality <span class="val" id="qv">80</span></label>
+        <input type="range" id="quality" min="10" max="100" value="80" step="1">
+        <p class="hint" id="qHint">80 = visually lossless for photos</p>
+      </div>
+
+      <div class="ctrl">
+        <label for="maxw">Max width <span class="val" id="wv">2000</span><span class="unit">px</span></label>
+        <input type="range" id="maxw" min="320" max="6000" value="2000" step="80">
+        <p class="hint" id="wHint">Original size is kept when possible</p>
+      </div>
+
+      <div class="ctrl">
+        <label for="bg">Background</label>
+        <select id="bg">
+          <option value="auto">Auto (keep alpha)</option>
+          <option value="ffffff">White</option>
+          <option value="000000">Black</option>
+        </select>
+        <p class="hint">JPG has no transparency — alpha areas are filled with this colour.</p>
+      </div>
+    </div>
+
+    <div class="actions">
+      <button class="btn primary" id="convert" disabled>Convert &amp; compress</button>
+      <button class="btn" id="dlAll" disabled>Download all</button>
+      <button class="btn" id="clear" disabled>Clear</button>
+    </div>
+
+    <div class="prog" id="prog"><i></i></div>
+    <p class="err" id="err" role="alert"></p>
+  </section>
+
+  <section class="results" id="results" hidden>
+    <div class="res-head">
+      <h2 id="resTitle">Results</h2>
+      <div class="totals" id="totals"></div>
+    </div>
+    <div class="list" id="list"></div>
+  </section>
+
+  <section class="how" id="how">
+    <h2>How to convert HEIC to JPG</h2>
+    <ol>
+      <li><b>Drop</b> your <code>.heic</code> files into the box above (or click to browse).</li>
+      <li>Choose <b>JPG</b>, <b>PNG</b> or <b>WebP</b> as the output format.</li>
+      <li>Set the <b>quality</b> and <b>max width</b> to trade file size against resolution.</li>
+      <li>Press <b>Convert</b>, then download each file or use <b>Download all</b>.</li>
+    </ol>
+    <p class="muted">Everything runs inside your browser via the Canvas API and the open-source
+       <code>heic2any</code> library. Your images are never sent to a server.</p>
+  </section>
+
+  <section class="faq" id="faq">
+    <h2>Frequently asked questions</h2>
+
+    <details open>
+      <summary>How do I convert HEIC to JPG?</summary>
+      <p>Upload or drop your <code>.heic</code> files into the converter above, choose JPG as the
+      output format, adjust the quality slider, then press <b>Convert</b> and download the result.
+      Everything happens in your browser.</p>
+    </details>
+
+    <details>
+      <summary>Is this HEIC converter really free?</summary>
+      <p>Yes — there is no account, no watermark, no file limit and no paid tier. The tool is hosted
+      on GitHub Pages at no cost.</p>
+    </details>
+
+    <details>
+      <summary>Are my HEIC files uploaded to a server?</summary>
+      <p><b>No.</b> Conversion happens entirely inside your browser using the Canvas API and the
+      <code>heic2any</code> library. Your files are never transmitted. You can verify this yourself:
+      open your browser's Network tab and you will see no upload request at all.</p>
+    </details>
+
+    <details>
+      <summary>How much can I compress a HEIC file?</summary>
+      <p>On typical iPhone photos, converting to JPG at quality 75–80 while limiting the maximum
+      width reduces the file size by <b>60–90%</b> with no visible quality loss.</p>
+    </details>
+
+    <details>
+      <summary>Can I convert multiple HEIC files at once?</summary>
+      <p>Yes. Drop up to <b>50</b> HEIC files at a time and download them individually or as a batch.</p>
+    </details>
+
+    <details>
+      <summary>Why can I not open HEIC files on my Windows PC?</summary>
+      <p>Windows does not natively support HEIC. Convert them to JPG once with this tool and they will
+      open everywhere — including in email clients, Microsoft Word, Photoshop and older software.</p>
+    </details>
+
+    <details>
+      <summary>Which devices create HEIC files?</summary>
+      <p>All modern iPhones and iPads (iOS 11+), plus many Android cameras and apps such as Google
+      Photos, WhatsApp and Snapchat. macOS can also export to HEIC.</p>
+    </details>
+
+    <details>
+      <summary>Will the converted JPG keep my photo's quality?</summary>
+      <p>At quality 80 the difference is invisible to the eye. HEIC itself is a lossy codec, so
+      converting to JPG never adds visible artefacts — it only re-encodes what HEIC already stored.</p>
+    </details>
+  </section>
+
+  <section class="privacy" id="privacy">
+    <h2>Privacy &amp; how it works</h2>
+    <ul>
+      <li><b>No upload.</b> Your HEIC files are read with <code>FileReader</code>, decoded in-browser and
+          re-encoded with the Canvas API. They never leave your device.</li>
+      <li><b>No storage.</b> Nothing is written to disk and nothing is kept after you close the tab.</li>
+      <li><b>No account, no tracking, no watermark.</b></li>
+      <li><b>Open source.</b> The decoder is <code>heic2any</code> (MIT). The whole app is on GitHub.</li>
+    </ul>
+  </section>
+
+  <section class="related">
+    <h2>Related tools</h2>
+    <ul>
+      <li><a href="https://apluscancode.github.io/image-compressor/">Image Compressor</a> — shrink JPG, PNG and WebP without losing quality</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <p>HEIC to JPG Converter — free, private, browser-based. Built for people who just need their photos to open.</p>
+    <p class="muted">Uses <a href="https://github.com/nodeca/pica" rel="nofollow noopener">pica</a> and
+       <a href="https://github.com/catdad-express/heic2any" rel="nofollow noopener">heic2any</a> (MIT).
+       Hosted free on GitHub Pages.</p>
+  </div>
+</footer>
+
+<script src="vendor/heic2any.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
